@@ -203,12 +203,26 @@ $conn->close();
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+    }
 
-.admin-login-button:hover {
-    background-color: #FECF51;
-}
+    .admin-login-button:hover {
+        background-color: #FECF51;
+    }
+    .review-button {
+        background-color: #1F3C70;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 1.2em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
+    .review-button:hover {
+        background-color: #FECF51;
+        color: #1F3C70;
+    }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -277,6 +291,12 @@ $conn->close();
         </div>
     </div>
     <script src="script.js"></script>
+    
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="reviews.php">
+            <button class="review-button">Переглянути відгуки</button>
+        </a>
+    </div>
 
     <div class="header">
         <div class="logo">
